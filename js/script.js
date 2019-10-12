@@ -48,7 +48,7 @@
       }
       $.ajax({
         type: "POST",
-        url: "https://docs.google.com/forms/d/1OCiSMSdit8QgxlhWjO9y9MmtFgpLdo52xf7UaCfY_ng/formResponse",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSdnxL_za2KjECV_6MAb2d4UK8Da1f0mxtDriMC9uNq2hjWB3Q/formResponse",
         data: dataString,
         complete:sent
       });
