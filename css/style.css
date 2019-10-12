@@ -418,13 +418,6 @@ header {
   opacity: 0.8
 }
 
-.home_txt {
-  margin: 0;
-  width: 100%;
-  z-index: 4;
-  bottom: 26px;
-}
-
 .player {
   max-width: 320px;
   width: 100%;
@@ -1118,7 +1111,7 @@ header {
 
 .story_img_plane:after {
   position: absolute;
-  background: #000
+  background: #000;
   z-index: 4;
   width: 10%;
   height: 400px;
@@ -1480,9 +1473,6 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.title1 {
-  font: 46px/48px Great Vibes;
-}
 .aboutTitle {
   font: 25px/33px Great Vibes;
   color: white;
@@ -1501,73 +1491,12 @@ header {
   text-indent: -15px;
   font: 52px/56px Great Vibes;
 }
-.frozen {
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
-  	-webkit-background-clip: text;
-	background-size: contain;
-	width: 100%;
-	text-align: center;
-	color: transparent;
-	font-weight: 900;
-  font-size: 52px;
-  height: 50px;
-  padding-top: 12px;
-	
-	&::before {
-		content: attr(data-heading);
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
-		-webkit-background-clip: text;
-		color: transparent;
-		mix-blend-mode: screen;
-		animation: shine 1s infinite;
-		background-size: 200%;
-		text-shadow: 
-			2px 2px 10px rgba(#000, 0.2),
-			-2px 2px 10px rgba(#000, 0.2),
-			-2px -2px 10px rgba(#000, 0.2);
-	}
-}
 
 @keyframes shine {
 	0% {background-position: -100%;}
 	100% {background-position: 100%;}
 }
-.box{
-  margin-top: 450px!important;
-  padding: 20px;
-  background: rgb(34, 34, 34); /* for IE */
-  background: rgba(34, 34, 34, 0.75);
-  width: 50%;
-  overflow: none;
-  display: block;
-  margin: auto;
-  border-radius: 2px;
-  color: rgba(255, 255, 255, 0.85);
-}
-.boxAbout{
-  margin-top: 120px!important;
-  padding: 20px;
-  background: rgba(34, 34, 34, 0.76);
-  width: 60%;
-  overflow: none;
-  display: block;
-  margin: auto;
-  border-radius: 2px;
-  color: rgba(255, 255, 255, 0.85);
-}
-.boxTop{
-  padding: 20px;
-  width: 80%;
-  overflow: none;
-  display: block;
-  margin: auto;
-  border-radius: 2px;
-  color: rgba(255, 255, 255, 0.85);
-}
+
 .title2 {
   font: 56px/60px Roboto Condensed;
   margin: 0 0 13px 0;
@@ -1763,11 +1692,6 @@ header {
 }
 
 /*# 14. Gallery*/
-.gallery {
-  padding: 48px 0 0;
-  height:550px;
-
-}
 
 .gallery_item {
   position: relative;
@@ -1893,10 +1817,6 @@ header {
     margin: 0;
   }
 
-  .home_intro {
-    background-attachment: scroll;
-  }
-
   .hotel {
     background-attachment: scroll;
   }
@@ -2009,7 +1929,7 @@ header {
     width: 200px;
     height: 200px;
     left: 50%;
-    margin: 0 0 0 -100px;
+    margin: 18px 0 0 -100px;
     position: absolute;
     border-radius: 50%;
     z-index: 5;
@@ -2026,9 +1946,11 @@ header {
   }
 
   .story_plane {
-    width: 100%;
-    left: 0;
-    background: none
+    width: 94%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3%;
+    background-image: url(../images/main_back.jpg);
   }
 
   .story_txt {
@@ -2080,4 +2002,198 @@ a.maplink:visited {
 }
 .no-italics {
   font-style: normal;   
+}
+@media all and (max-width:480px) {
+  .home_intro {
+    background-attachment: scroll;
+    background-image: url(../img/pn-mobile1.jpg);
+    max-height: 301px;
+    min-height: 300px;
+  }
+  .home_txt {
+    margin-top: 40%;
+    width: 100%;
+    z-index: 4;
+    bottom: 26px;
+  }
+  .title1 {
+    font: 20px/26px Great Vibes;
+  }
+  .title-invite{
+    margin-top:-11%;
+  }
+  .boxTop{
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .aboutTitle {
+    font: 17px/26px Great Vibes;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+  }
+  .titleTop {
+    padding:5px;
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 15px;
+    font-style: italic;
+    font-family: cursive;
+    color: #1b16e0;
+  }
+  .boxAbout{
+    margin-top: 120px!important;
+    padding: 20px;
+    background: rgba(34, 34, 34, 0.76);
+    width: 90%;
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .box{
+    background: rgb(34, 34, 34); /* for IE */
+    background: rgba(34, 34, 34, 0.75);
+    width: 50%;
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .frozen {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+     -webkit-background-clip: text;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    height: 50px;
+    padding:5px;
+    
+    &::before {
+      content: attr(data-heading);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      mix-blend-mode: screen;
+      animation: shine 1s infinite;
+      background-size: 200%;
+      text-shadow: 
+        2px 2px 10px rgba(#000, 0.2),
+        -2px 2px 10px rgba(#000, 0.2),
+        -2px -2px 10px rgba(#000, 0.2);
+    }
+  }
+  .gallery {
+    padding: 48px 0 0;
+    height:550px;
+    background-image: url(../img/rns-mobile.jpg);
+  }
+}
+@media all and (min-width: 481px) {
+  .home_intro {
+    background-attachment: scroll;
+    background-image: url(../img/pn.jpg);
+  }
+  .home_txt {
+    margin: 0;
+    width: 100%;
+    z-index: 4;
+    bottom: 26px;
+  }
+  .title1 {
+    font: 46px/48px Great Vibes;
+  }
+  .aboutTitle {
+    font: 25px/33px Great Vibes;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+  }
+  .titleTop {
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 33px;
+    font-style: italic;
+    font-family: cursive;
+    color: #4140a2;
+  }
+  .boxTop{
+    padding: 20px;
+    width: 80%;
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .box{
+    margin-top: 450px!important;
+    padding: 20px;
+    background: rgb(34, 34, 34); /* for IE */
+    background: rgba(34, 34, 34, 0.75);
+    width: 50%;
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .frozen {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+      -webkit-background-clip: text;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    font-weight: 900;
+    font-size: 52px;
+    height: 50px;
+    padding-top: 12px;
+    
+    &::before {
+      content: attr(data-heading);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      mix-blend-mode: screen;
+      animation: shine 1s infinite;
+      background-size: 200%;
+      text-shadow: 
+        2px 2px 10px rgba(#000, 0.2),
+        -2px 2px 10px rgba(#000, 0.2),
+        -2px -2px 10px rgba(#000, 0.2);
+    }
+  }
+  .boxAbout{
+    margin-top: 120px!important;
+    padding: 20px;
+    background: rgba(34, 34, 34, 0.76);
+    width: 60%;
+    overflow: none;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .gallery {
+    padding: 48px 0 0;
+    height:550px;
+    background-image: url(../img/rns.jpg);
+  }
 }
