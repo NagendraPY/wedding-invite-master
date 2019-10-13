@@ -2197,3 +2197,9 @@ a.maplink:visited {
     background-image: url(../img/rns.jpg);
   }
 }
+.invite-parent {
+margin-bottom: 0px;
+}
+.invite-parent-bottom {
+  margin-top: 7px;
+  }
